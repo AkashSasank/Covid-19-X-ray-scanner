@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block home %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="w-100 p-3 button-div">
+    <div class="buttons-container">
+
+                <a class="btn btn-light btn-lg shadow-lg
+                      border border-dark  " id="test-button"
+           href={{test_url}}>Take the Test ➞
+        </a>
+
+        <a href={{test_url}} class="btn btn-light btn-lg shadow-lg
+                      border border-dark  " id="git-button"><img src="../static/img/github-logo.svg" alt="github" id="git-svg">GitHub➞
+        </a>
+    </div>
+
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "base.html"%}
+{% block form %}
+<!-- Form -->
+<div class="h-100 d-inline-block w-100 p-3 x-ray-div">
+    <form id="upload-form" action={{results_url}} enctype = "multipart/form-data" method="post">
+        <!-- upload field -->
+        <div class="image-container-div">
+            <div class=" shadow  rounded upload img-box"
+                 id="upload">
+                <label for="upload_file"><h4>Drag and drop/Click to upload</h4></label>
+                <input
+                        type="file"
+                        id="upload_file"
+                        class="file-upload-input"
+                        accept="image/*"
+                        required
+                        name="x-ray"
+                />
+
+            </div>
+            <div class="image-div">
+                <img id="preview" src="#" alt="your image"/>
+            </div>
+
+        </div>
+
+
+        <div class="sub-div">
+            <div class="form-group shadow submit">
+                <button
+                        name="submit"
+                        type="submit"
+                        class="submit-button"
+                >Submit
+                </button>
+                <button
+                        class="submit-button"
+                        type="reset"
+                        onclick="window.location.reload()"
+                >
+                    Reset
+                </button>
+            </div>
+        </div>
+
+
+    </form>
+</div>
+
+
+{% endblock %}

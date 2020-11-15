@@ -1,0 +1,12 @@
+flask
+flask_cors
+git+https://github.com/keras-team/keras-tuner.git@1.0.2rc4
+autokeras
+tensorflow
+keras
+sklearn
+numpy
+matplotlib
+opencv-python
+python-decouple
+seaborn
