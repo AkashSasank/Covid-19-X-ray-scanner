@@ -3,3 +3,4 @@ flask_cors
 gunicorn
 tensorflow==2.3
 keras
+pillow
