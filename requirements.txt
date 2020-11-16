@@ -7,8 +7,4 @@ tensorflow==2.3
 keras
 sklearn
 numpy
-matplotlib
-opencv-python
-python-decouple
-seaborn
 werkzeug

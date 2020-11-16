@@ -1,6 +1,5 @@
 import os
 
-
 from flask import Flask, render_template, request, redirect, url_for  # These are all we need for our purposes
 from flask_cors import CORS
 
@@ -11,9 +10,6 @@ from werkzeug.utils import secure_filename
 from ML.utils import predict_covid
 from Server.urls import urls
 from Server.log import Logger
-
-
-
 
 app = Flask(__name__)
 CORS(app)
@@ -46,7 +42,7 @@ def predict():
             filename = secure_filename(image_file.filename)
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             image_file.save(file_path)
-            img = img_to_array(load_img(file_path, target_size=(200, 200)))/255.0
+            img = img_to_array(load_img(file_path, target_size=(200, 200))) / 255.0
             os.remove(file_path)
             img = tf.expand_dims(img, axis=0)
             # TODO : Check whether input image is X-ray or Not
