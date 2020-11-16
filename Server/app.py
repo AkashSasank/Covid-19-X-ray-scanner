@@ -2,12 +2,22 @@ from flask import Flask, render_template, request, redirect, url_for  # These ar
 import tensorflow as tf
 from flask_cors import CORS
 from ML.utils import predict_covid
-import cv2
-import numpy as np
 from Server.urls import urls
+from werkzeug.utils import secure_filename
+import os
+from keras.preprocessing.image import load_img, img_to_array
 
 app = Flask(__name__)
 CORS(app)
+
+UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
 @app.route("/")
@@ -24,22 +34,26 @@ def form():
 def predict():
     try:
         image_file = request.files.get('x-ray', None)
-        img = cv2.imdecode(np.fromstring(image_file.read(), np.uint8), cv2.IMREAD_UNCHANGED)
-        if len(img.shape) <= 2:
-            img = cv2.merge((img, img, img))
-
-        img = cv2.resize(img, (200, 200)) / 255.0
-        img = tf.expand_dims(img, axis=0)
-        # TODO : Check whether input image is X-ray or Not
-        output = predict_covid(img, covid_model_path='../ML/best_covid_classifier')
-        accuracy = output[2][0] * 100
-        category = output[1][0]
-        args = {'diagnosis': category, 'accuracy': str(accuracy) + '%'}
-        for i in urls.items():
-            args[i[0]] = i[1]
-        return render_template("result.html", **args)
+        if image_file and allowed_file(image_file.filename):
+            filename = secure_filename(image_file.filename)
+            file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            image_file.save(file_path)
+            img = img_to_array(load_img(file_path, target_size=(200, 200)))/255.0
+            os.remove(file_path)
+            img = tf.expand_dims(img, axis=0)
+            # TODO : Check whether input image is X-ray or Not
+            output = predict_covid(img, covid_model_path='../ML/best_covid_classifier')
+            accuracy = output[2][0] * 100
+            category = output[1][0]
+            args = {'diagnosis': category, 'accuracy': str(accuracy) + '%'}
+            for i in urls.items():
+                args[i[0]] = i[1]
+            return render_template("result.html", **args)
+        else:
+            return redirect(url_for('error_500'))
 
     except Exception as e:
+        print(e)
         return redirect(url_for('error_500'))
 
 

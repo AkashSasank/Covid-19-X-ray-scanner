@@ -11,3 +11,4 @@ matplotlib
 opencv-python
 python-decouple
 seaborn
+werkzeug
