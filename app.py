@@ -8,8 +8,8 @@ from keras.preprocessing.image import load_img, img_to_array
 from werkzeug.utils import secure_filename
 
 from ML.utils import predict_covid
-from Server.urls import urls
-from Server.log import Logger
+from urls import urls
+from log import Logger
 
 app = Flask(__name__)
 CORS(app)
@@ -46,7 +46,7 @@ def predict():
             os.remove(file_path)
             img = tf.expand_dims(img, axis=0)
             # TODO : Check whether input image is X-ray or Not
-            output = predict_covid(img, covid_model_path='../ML/best_covid_classifier')
+            output = predict_covid(img, covid_model_path='./ML/best_covid_classifier')
             accuracy = output[2][0] * 100
             category = output[1][0]
             args = {'diagnosis': category, 'accuracy': str(accuracy) + '%'}
