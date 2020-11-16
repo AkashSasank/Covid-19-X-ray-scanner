@@ -44,7 +44,6 @@ def predict():
             if not os.path.exists(app.config['UPLOAD_FOLDER']):
                 os.mkdir(app.config['UPLOAD_FOLDER'])
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            print(file_path)
             image_file.save(file_path)
             img = img_to_array(load_img(file_path, target_size=(200, 200))) / 255.0
             os.remove(file_path)
@@ -62,7 +61,6 @@ def predict():
 
     except Exception as e:
         Logger.get_logger().exception(e)
-        print(e)
         return redirect(url_for('error_500'))
 
 
