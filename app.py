@@ -41,7 +41,10 @@ def predict():
         image_file = request.files.get('x-ray', None)
         if image_file and allowed_file(image_file.filename):
             filename = secure_filename(image_file.filename)
+            if not os.path.exists(app.config['UPLOAD_FOLDER']):
+                os.mkdir(app.config['UPLOAD_FOLDER'])
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+            print(file_path)
             image_file.save(file_path)
             img = img_to_array(load_img(file_path, target_size=(200, 200))) / 255.0
             os.remove(file_path)
