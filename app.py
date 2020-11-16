@@ -17,6 +17,7 @@ CORS(app)
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+app.config['DEBUG'] = False
 
 
 def allowed_file(filename):
@@ -58,6 +59,7 @@ def predict():
 
     except Exception as e:
         Logger.get_logger().exception(e)
+        print(e)
         return redirect(url_for('error_500'))
 
 
