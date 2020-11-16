@@ -3,7 +3,7 @@ $('.buttons-container').hover(function(){
 $('.background-div').css('opacity', '0.5')
 },
 function(){
-$('.background-div').css('opacity', '1')
+$('.background-div').css('opacity', '0.6')
 })
 
 $('#upload').hover(function(){

@@ -1,17 +1,25 @@
 {% extends "base.html"%}
 {% block home %}
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="intro">
+    <h3>A basic Web App for categorising COVID-19 patients based on chest X-Rays. The inputs are classified to three
+        categories: Normal, COVID-19 and Viral Pneumonia.</h3>
 
+
+</div>
 <div class="w-100 p-3 button-div">
+
+
     <div class="buttons-container">
 
-                <a class="btn btn-light btn-lg shadow-lg
+        <a class="btn btn-light btn-lg shadow-lg
                       border border-dark  " id="test-button"
            href={{test_url}}>Take the Test ➞
         </a>
 
         <a href='https://github.com/AkashSasank/Covid-19-X-ray-scanner.git' class="btn btn-light btn-lg shadow-lg
-                      border border-dark  " id="git-button"><img src="../static/img/github-logo.svg" alt="github" id="git-svg">GitHub➞
+                      border border-dark  " id="git-button"><img src="../static/img/github-logo.svg" alt="github"
+                                                                 id="git-svg">GitHub➞
         </a>
     </div>
 
