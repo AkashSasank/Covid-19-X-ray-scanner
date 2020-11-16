@@ -1,11 +1,19 @@
+import os
+
+
 from flask import Flask, render_template, request, redirect, url_for  # These are all we need for our purposes
-import tensorflow as tf
 from flask_cors import CORS
+
+import tensorflow as tf
+from keras.preprocessing.image import load_img, img_to_array
+from werkzeug.utils import secure_filename
+
 from ML.utils import predict_covid
 from Server.urls import urls
-from werkzeug.utils import secure_filename
-import os
-from keras.preprocessing.image import load_img, img_to_array
+from Server.log import Logger
+
+
+
 
 app = Flask(__name__)
 CORS(app)
@@ -53,7 +61,7 @@ def predict():
             return redirect(url_for('error_500'))
 
     except Exception as e:
-        print(e)
+        Logger.get_logger().exception(e)
         return redirect(url_for('error_500'))
 
 
