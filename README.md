@@ -8,3 +8,5 @@ $ pip install -r requirements.txt
 $ cd Server
 $ python app.py
 ```
+## Datasets
+  *[COVID-19 Radiography Database](https://www.kaggle.com/tawsifurrahman/covid19-radiography-database)
