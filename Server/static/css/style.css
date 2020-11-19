@@ -196,3 +196,8 @@ position: absolute;
   cursor: pointer;
   border-radius: 5px;
 }
+
+.alert{
+position:absolute;
+z-index:1000;
+top:50%

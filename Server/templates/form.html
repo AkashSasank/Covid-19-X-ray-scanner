@@ -2,12 +2,16 @@
 {% block form %}
 <!-- Form -->
 <div class="h-100 d-inline-block w-100 p-3 x-ray-div">
-    <form id="upload-form" action={{results_url}} enctype = "multipart/form-data" method="post">
+    <form id="upload-form" action={{results_url}} enctype="multipart/form-data" method="post">
         <!-- upload field -->
         <div class="image-container-div">
             <div class=" shadow  rounded upload img-box"
                  id="upload">
-                <label for="upload_file"><h4>Drag and drop/Click to upload</h4></label>
+                <label for="upload_file"><h4>Drag and drop/Click to upload</h4>
+                    {%if 'error_text'%}
+                    <h5 style="color:red">{{error_text}}</h5>
+                    {%endif%}
+                </label>
                 <input
                         type="file"
                         id="upload_file"
@@ -36,7 +40,7 @@
                 <button
                         class="submit-button"
                         type="reset"
-                        onclick="window.location.reload()"
+                        onclick="window.location.href ='{{test_url}}'"
                 >
                     Reset
                 </button>

@@ -4,17 +4,20 @@ import autokeras as ak
 from decouple import config
 from tensorflow.keras.callbacks import TensorBoard
 
-x_train, x_test, y_train, y_test, num_classes, categories = load_dataset(config('DATASET_PATH_XRAY_NONXRAY')
-                                                                         , 200, 200,
-                                                                         0.2, num_samples=200)
+x_train, x_test, y_train, y_test, num_classes, categories \
+    = load_dataset(config('DATASET_PATH_XRAY_NONXRAY')
+                   , 200, 200,
+                   0.1, num_samples=200, one_hot_encode=False)
 # Initialize the image classifier.
 clf = ak.ImageClassifier(
         overwrite=True,
         max_trials=1)
 tb = TensorBoard(histogram_freq=1, embeddings_freq=1)
 print(y_train.shape)
+print(x_train.shape)
+
 # Feed the image classifier with training data.
-clf.fit(x_train, y_train, epochs=50, callbacks=[tb])
+clf.fit(x_train, y_train, epochs=10, callbacks=[tb])
 
 # Predict with the best model.
 predicted_y = clf.predict(x_test)
