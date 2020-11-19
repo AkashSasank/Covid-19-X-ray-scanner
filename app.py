@@ -49,6 +49,9 @@ def predict():
     try:
         image_file = request.files.get('x-ray', None)
         if image_file and allowed_file(image_file.filename):
+            cwd = os.getcwd()
+            if not os.path.exists(os.path.join(cwd, app.config['UPLOAD_FOLDER'])):
+                os.mkdir(os.path.join(cwd, app.config['UPLOAD_FOLDER']))
             filename = secure_filename(image_file.filename)
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             image_file.save(file_path)
