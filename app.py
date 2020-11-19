@@ -74,6 +74,7 @@ def predict():
             return redirect(url_for('error_500'))
 
     except Exception as e:
+        print(e)
         Logger.get_logger().exception(e)
         return redirect(url_for('error_500'))
 
