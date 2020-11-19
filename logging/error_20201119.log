@@ -1,0 +1,180 @@
+2020-11-19 16:12:14,358 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:12:14,361 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:12:14] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:12:14,368 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:12:14] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:12:14,395 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:12:14] "[37mGET /static/css/error.css HTTP/1.1[0m" 200 -
+2020-11-19 16:12:14,397 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:12:14] "[37mGET /static/js/error.js HTTP/1.1[0m" 200 -
+2020-11-19 16:12:14,842 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:12:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-11-19 16:13:45,885 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:45] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:45,950 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:45] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:47,830 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:13:47,831 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:47] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:13:47,835 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:47] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:13:50,125 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:50] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:50,166 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:50] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,608 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,626 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,629 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /static/js/index.js HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,955 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,961 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /static/img/background.jpg HTTP/1.1[0m" 200 -
+2020-11-19 16:13:51,982 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:51] "[37mGET /static/img/favicon.png HTTP/1.1[0m" 200 -
+2020-11-19 16:13:56,715 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:13:56,716 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:56] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:13:56,721 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:56] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:13:56,767 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:13:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-11-19 16:17:27,526 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:27] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:27,573 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:27] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:29,660 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:17:29,661 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:29] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:17:29,665 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:29] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:17:32,391 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:32] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:32,423 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:32] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:34,157 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:17:34,159 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:34] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:17:34,164 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:34] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:17:36,809 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:36] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:36,848 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:36] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,149 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,170 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /static/css/style.css HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,172 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /static/js/index.js HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,458 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,466 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /static/img/background.jpg HTTP/1.1[0m" 200 -
+2020-11-19 16:17:48,483 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:48] "[37mGET /static/img/favicon.png HTTP/1.1[0m" 200 -
+2020-11-19 16:17:49,886 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:49] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:49,931 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:49] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:17:55,023 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:17:55,024 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:55] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:17:55,027 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:55] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:17:55,072 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:17:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2020-11-19 16:19:18,050 - D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py:predict:77 
+SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+Traceback (most recent call last):
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\app.py", line 58, in predict
+    img_type = predict_xray(img, model_path='../ML/best_xray_identifier')
+  File "D:\PROJECTS\MY PROJECTS\Covid Xray scanner\ML\utils.py", line 18, in predict_xray
+    loaded_model = load_model(model_path)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\keras\saving\save.py", line 186, in load_model
+    loader_impl.parse_saved_model(filepath)
+  File "C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\tensorflow\python\saved_model\loader_impl.py", line 113, in parse_saved_model
+    constants.SAVED_MODEL_FILENAME_PB))
+OSError: SavedModel file does not exist at: ../ML/best_xray_identifier/{saved_model.pbtxt|saved_model.pb}
+2020-11-19 16:19:18,052 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:18] "[32mPOST /test-result HTTP/1.1[0m" 302 -
+2020-11-19 16:19:18,057 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:18] "[37mGET /error500 HTTP/1.1[0m" 200 -
+2020-11-19 16:19:21,205 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:21] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:19:21,245 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:21] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:19:23,615 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:23] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:19:23,642 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+127.0.0.1 - - [19/Nov/2020 16:19:23] "[37mGET /x-ray-test HTTP/1.1[0m" 200 -
+2020-11-19 16:20:42,842 - C:\Users\AKASH SASANK\python_envs\Covid Xray scanner\lib\site-packages\werkzeug\_internal.py:_log:113 
+ * Detected change in 'D:\\PROJECTS\\MY PROJECTS\\Covid Xray scanner\\app.py', reloading
