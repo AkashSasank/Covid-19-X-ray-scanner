@@ -19,9 +19,32 @@
 </head>
 <body>
 <div id="page" class="flex-column">
-    <div id="header">{% block header %}
+    <div id="header">
+        {% block header %}
         <nav class="navbar navbar-dark bg-black fixed-top p-3">
             <a class="navbar-brand" href={{home}}><h2>COVID-19 X-Ray Scanner</h2></a>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item p-3">
+                    <a class="nav-link" href={{home}}>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href={{test_url}}>
+                        Test
+                    </a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href='https://github.com/AkashSasank/Covid-19-X-ray-scanner.git'>
+                        Codebase
+                    </a>
+                </li>
+                <li class="nav-item p-3">
+                    <a class="nav-link" href="https://www.linkedin.com/in/akash-sasank-5b131612a">
+                        About Author
+                    </a>
+                </li>
+            </ul>
         </nav>
 
         {% endblock %}
